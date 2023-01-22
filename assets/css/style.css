@@ -1321,7 +1321,7 @@ nav ul li a.button2:hover {
     margin-top: 30px;
 }
 
-.login-mid .left img{
+.login-mid .left img {
     width: 500px;
     aspect-ratio: 1.27;
     margin-top: 20px;
@@ -1332,4 +1332,6 @@ nav ul li a.button2:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #000000;
+    border-radius: 50px;
 }
