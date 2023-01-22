@@ -1291,9 +1291,12 @@ nav ul li a.button2:hover {
     margin-top: 50px;
     padding: 40px;
     justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 .login-mid .left {
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1328,10 +1331,204 @@ nav ul li a.button2:hover {
 }
 
 .login-mid .right {
+    flex-basis: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: #000000;
     border-radius: 50px;
+    padding: 50px;
+}
+
+.login-mid .right .title1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.login-mid .right .title2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-mid .right .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.login-mid .right .inputs .input {
+    background: #524F4E;
+    border-radius: 15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-mid .right .inputs input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.3);
+    width: 90%;
+}
+
+.login-mid .right .inputs img {
+    width: 25px;
+    height: auto;
+}
+
+.login-mid .right .forgetpass {
+    width: 88%;
+}
+
+.login-mid .right .forgetpass a {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.login-mid .right .forgetpass a:hover {
+    text-decoration: underline;
+}
+
+.login-mid .right .btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #EF403B;
+    border-radius: 15px;
+    margin-top: 50px;
+    padding: 15px 60px;
+    cursor: pointer;
+}
+
+.login-mid .right p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.login-mid .right p span {
+    color: #EF403B;
+}
+
+.login-mid .right p span a {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .login-mid .left img {
+        width: 400px;
+    }
+
+    .login-mid .left .title2 {
+        font-size: 14px;
+    }
+
+    .login-mid .left .title1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .login-mid .right .title1 {
+        font-size: 26px;
+    }
+
+    .login-mid .right .title2 {
+        font-size: 14px;
+    }
+
+    .login-mid .right .inputs .input {
+        padding: 12px 20px;
+    }
+
+    .login-mid .right .forgetpass a {
+        font-size: 12px;
+    }
+
+    .login-mid .right .btn {
+        font-size: 16px;
+        padding: 10px 50px;
+    }
+
+    .login-mid .right p {
+        font-size: 12px;
+    }
+
+    .login-mid .right {
+        padding: 40px;
+    }
+
+    .login-mid .left img {
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .login-mid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-mid .right {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .login-mid .left {
+        align-items: center;
+    }
+
+    .login-mid .left img {
+        width: 100%;
+    }
+
+    .login-mid .right .title1 {
+        font-size: 20px;
+    }
+
+    .login-mid .right .title2 {
+        font-size: 12px;
+    }
+
+    .login-mid .right .inputs img {
+        width: 20px;
+    }
+
+    .login-mid .right .forgetpass a {
+        font-size: 10px;
+    }
 }
