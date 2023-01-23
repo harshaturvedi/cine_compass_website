@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN | CINE COMPASS</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
 </head>
 
 <body>
+    <div class="preloader">
+        <div class="lds-dual-ring"></div>
+    </div>
     <div class="container">
         <div class="navbar">
             <a href="./index.html"><img src="./assets/imgs/logo.png" alt="logo" class="logo"></a>
@@ -22,7 +30,7 @@
                     <li><a href="./pricing.html">Plans</a></li>
                     <li><a href="./about_us.html">About Us</a></li>
                     <li><a href="./login.html">Login</a></li>
-                    <li><a href="#" class="button2">Sign Up</a></li>
+                    <li><a href="./signup.html" class="button2">Sign Up</a></li>
                 </ul>
             </nav>
             <i class="fa-solid fa-bars menu-icon" id="menubtn" onclick="toggleNav()"></i>
@@ -32,7 +40,7 @@
             <div class="left">
                 <div class="title1">Rent. Lend.<span> Grow.</span></div>
                 <div class="title2">Hassle free experience a click away!</div>
-                <div class="pic"><img src="./assets/imgs/login_pic.png" alt=""></div>
+                <div class="pic" data-tilt><img src="./assets/imgs/login_pic.png" alt=""></div>
             </div>
             <div class="right">
                 <div class="head">
@@ -41,7 +49,8 @@
                 </div>
                 <div class="inputs">
                     <div class="input"><input type="text" placeholder="Mobile number / Email"></div>
-                    <div class="input"><input type="text" placeholder="Password"><img src="./assets/imgs/eye_close.png" alt=""></div>
+                    <div class="input"><input type="text" placeholder="Password"><img src="./assets/imgs/eye_close.png"
+                            alt=""></div>
                 </div>
                 <div class="forgetpass"><a>Forgot Password?</a></div>
                 <a class="btn">Signin</a>
@@ -56,6 +65,16 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
 <script src="./assets/js/main.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".pic"), {
+        max: 25,
+        speed: 400
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".pic"));
+</script>
 
 </html>

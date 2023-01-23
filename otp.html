@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>OTP</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -35,43 +35,32 @@
             </nav>
             <i class="fa-solid fa-bars menu-icon" id="menubtn" onclick="toggleNav()"></i>
         </div>
-        <div class="aboutus-mid">
+
+        <div class="login-mid">
             <div class="left">
-                <div class="title1">About us</div>
-                <div class="para">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae nibh ac elit scelerisque
-                    sodales. Suspendisse eu commodo nibh. Pellentesque sagittis, nisl et dapibus pellentesque, lacus
-                    lorem convallis lacus, eget sollicitudin urna urna eget mi. Aenean et purus rhoncus, accumsan libero
-                    eget, ultricies purus.
-                </div>
-                <div class="title1">Contact us</div>
-                <div class="links">
-                    <div class="link">
-                        <img src="./assets/imgs/Email.png" alt="email">
-                        <span>contact@company.com</span>
-                    </div>
-                    <div class="link">
-                        <img src="./assets/imgs/Phone.png" alt="email">
-                        <span>(414) 697 - 5892</span>
-                    </div>
-                    <div class="link">
-                        <img src="./assets/imgs/Address.png" alt="email">
-                        <span>794 Mcallister St San Francisco, 94102</span>
-                    </div>
-                </div>
+                <div class="title1">Rent. Lend.<span> Grow.</span></div>
+                <div class="title2">Hassle free experience a click away!</div>
+                <div class="pic" data-tilt><img src="./assets/imgs/login_pic.png" alt=""></div>
             </div>
             <div class="right">
-                <div class="title1">Send a message</div>
-                <div class="inputs">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Phone Number">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Group or Company">
-                    <textarea name="msg" id="" placeholder="Type your message"></textarea>
-                    <a class="btn" onclick="showPopUp()">Submit</a>
+                <div class="head">
+                    <div class="title1">Create new account</div>
+                    <div class="title2">Fill in the form to continue</div>
                 </div>
+                <div class="inputs">
+                    <div class="input"><input type="text" placeholder="Name"></div>
+                    <div class="input"><input type="text" placeholder="Mobile number"></div>
+                    <div class="input"><input type="text" placeholder="Email"></div>
+                    <div class="input"><input type="text" placeholder="Password"><img src="./assets/imgs/eye_close.png"
+                            alt=""></div>
+                    <div class="input"><input type="text" placeholder="Confirm Password"><img
+                            src="./assets/imgs/eye_close.png" alt=""></div>
+                </div>
+                <a class="btn">Signup</a>
+                <p>Already have an account? <span><a>Login</a></span></p>
             </div>
         </div>
+    </div>
     </div>
     <div class="footer2 black-footer">
         <div>Copyright © 2022 Cine Compass®</div>
@@ -79,6 +68,16 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="./assets/js/vanilla-tilt.js"></script>
 <script src="./assets/js/main.js"></script>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".pic"), {
+        max: 25,
+        speed: 400
+    });
+
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".pic"));
+</script>
 
 </html>
