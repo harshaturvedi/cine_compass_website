@@ -1,10 +1,9 @@
 $(window).on('load', function () {
-    setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
+    setTimeout(removeLoader, 1000);
 });
 function removeLoader() {
     $(".preloader").fadeOut(500, function () {
-        // fadeOut complete. Remove the loading div
-        $(".preloader").remove(); //makes page more lightweight 
+        $(".preloader").remove();
     });
 }
 
@@ -53,7 +52,7 @@ function showTimerP() {
                 myLoop();
             }
             if (i == -2) {
-                timer.innerHTML = "<a>Resend OTP</a>";
+                timer.innerHTML = "<a href=\"./otp.html\">Resend OTP</a>";
             }
         }, 1000)
     }

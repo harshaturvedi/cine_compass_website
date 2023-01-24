@@ -1488,6 +1488,8 @@ nav ul li a.button2:hover {
 
 .login-mid .right p span a {
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 1150px) {
