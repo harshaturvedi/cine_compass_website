@@ -24,16 +24,7 @@
     <div class="container">
         <div class="navbar">
             <a href="./index.html"><img src="./assets/imgs/logo.png" alt="logo" class="logo"></a>
-            <nav id="nav" class="">
-                <ul>
-                    <li><a href="./pricing.html" class="button1">Become Vendor</a></li>
-                    <li><a href="./pricing.html">Plans</a></li>
-                    <li><a href="./about_us.html">About Us</a></li>
-                    <li><a href="./login.html">Login</a></li>
-                    <li><a href="./signup.html" class="button2">Sign Up</a></li>
-                </ul>
-            </nav>
-            <i class="fa-solid fa-bars menu-icon" id="menubtn" onclick="toggleNav()"></i>
+            
         </div>
 
         <div class="login-mid">
@@ -44,20 +35,17 @@
             </div>
             <div class="right">
                 <div class="head">
-                    <div class="title1">Create new account</div>
-                    <div class="title2">Fill in the form to continue</div>
+                    <div class="title1">Verify your number</div>
+                    <div class="title2">Enter the OTP received on your number</div>
                 </div>
-                <div class="inputs">
-                    <div class="input"><input type="text" placeholder="Name"></div>
-                    <div class="input"><input type="text" placeholder="Mobile number"></div>
-                    <div class="input"><input type="text" placeholder="Email"></div>
-                    <div class="input"><input type="text" placeholder="Password"><img src="./assets/imgs/eye_close.png"
-                            alt=""></div>
-                    <div class="input"><input type="text" placeholder="Confirm Password"><img
-                            src="./assets/imgs/eye_close.png" alt=""></div>
-                </div>
-                <a class="btn">Signup</a>
-                <p>Already have an account? <span><a>Login</a></span></p>
+                <form method="get" class="digit-group inputs-otp" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                    <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                    <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                    <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                    <input type="text" id="digit-4" name="digit-4" data-previous="digit-3" />
+                </form>
+                <a class="btn" onclick="showTimerP()">Verify</a>
+                <p id="timer-p"></p>
             </div>
         </div>
     </div>

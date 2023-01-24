@@ -10,6 +10,7 @@
 body {
     background-color: #121110;
     overflow-x: hidden;
+    zoom: 0.8;
 }
 
 .preloader {
@@ -1013,7 +1014,7 @@ nav ul li a.button2:hover {
 }
 
 .card .btn a:hover {
-    box-shadow: 0 0 10px #f32179, 0 0 30px #f32179;
+    background-color: #EF403B;
 }
 
 .black-footer {
@@ -1573,5 +1574,86 @@ nav ul li a.button2:hover {
 
     .login-mid .right .forgetpass a {
         font-size: 10px;
+    }
+}
+
+.login-mid .right .inputs-otp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+    column-gap: 30px;
+}
+
+.login-mid .right .inputs-otp input {
+    border: none;
+    outline: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+    background: #524F4E;
+    border-radius: 15px;
+    width: 60px;
+    height: 60px;
+    padding: 15px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:500px) {
+    .login-mid .right .inputs-otp input {
+        width: 40px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .login-mid .right .inputs-otp input {
+        width: 20px;
+        height: 30px;
+    }
+}
+
+._404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+._404 .title1,
+._404 .title3 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    color: #FFFFFF;
+}
+
+._404 .title2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 180px;
+    color: #EF403B;
+}
+
+@media screen and (max-width: 500px) {
+
+    ._404 .title1,
+    ._404 .title3 {
+        font-size: 40px;
+    }
+
+    ._404 .title2 {
+        font-size: 140px;
     }
 }
